@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react"
+import './homepage.css'
 
 // components
 import PopularShows from "../components/PopularShows";
@@ -17,7 +18,7 @@ const HomePage = () => {
     useEffect(fetchPopularSeries,[])
 
         return (
-            <div>
+            <div className = "popular-shows">
                 <h2>Popular now</h2>
                 <PopularShows  popularShows={popularShows}/>
             </div>

@@ -4,8 +4,9 @@ const PopularShows = ({popularShows}) => {
     const popularShowTiles = popularShows.map((popularShow, index) =>{
      
         return <li key = {index}>
-        <p>{popularShow.name}</p>
         <img src = {imageURL + popularShow.poster_path} alt = {popularShow.name}></img>
+        <p>{popularShow.name}</p>
+        
         </li>
         
     })
