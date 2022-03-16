@@ -16,19 +16,11 @@ const HomePage = () => {
 
     useEffect(fetchPopularSeries,[])
 
-    const ShowList = ()=>{
-        return <p> There should be shows here, but there aren't!!!</p>
-    }
-
-   
-
-    return (
-        <div>
-            <h2>Popular now</h2>
-            <PopularShows  popularShows={popularShows}/>
-            <ShowList/>
-            
-        </div>
+        return (
+            <div>
+                <h2>Popular now</h2>
+                <PopularShows  popularShows={popularShows}/>
+            </div>
     )
 }
 
