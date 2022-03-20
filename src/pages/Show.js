@@ -1,8 +1,8 @@
-const Show = () => {
+const Show = ({selectedShow}) => {
     return (
-        <div>
-            Here are clicked show details
-        </div>
+        <section>
+            <p>{selectedShow.overview}</p>
+        </section>
     )
 }
 

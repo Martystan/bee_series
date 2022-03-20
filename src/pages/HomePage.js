@@ -1,14 +1,17 @@
 import {useState, useEffect} from "react"
 import './homepage.css'
 
+
 // components
 import PopularShows from "../components/PopularShows";
 import TopRatedShows from "../components/TopRatedShows";
+import Show from "./Show";
 
 const HomePage = () => {
 
     const[popularShows, setPopularShows] = useState([]);
     const[topRatedShows, setTopRatedShows] = useState([]);
+    const[selectedShow, setSelectedShow] = useState(null)
 
     const fetchPopularSeries = ()=>{
         fetch("https://api.themoviedb.org/3/tv/popular?api_key=e8d8f61f887dbb73c841557fc8ce3e6b&language=en-US&page=1")
@@ -25,11 +28,16 @@ const HomePage = () => {
     useEffect(fetchPopularSeries,[])
     useEffect(fetchTopRatedSeries,[])
 
+    const onShowClick = (show) => {
+        setSelectedShow(show)
+    }
+
         return (
             <main>
             <section className = "shows-by-category">
                 <h2>Popular now</h2>
-                <PopularShows  popularShows={popularShows}/>
+                <PopularShows  popularShows={popularShows} onShowClick={onShowClick}/>
+                {selectedShow ? <Show selectedShow= {selectedShow}/>: null}
             </section>
             <section className = "shows-by-category">
                 <h2>Top Rated Shows</h2>
