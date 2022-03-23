@@ -1,7 +1,9 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: blanchedalmond;
+    background-color: #feb611;
+    color: white;
+    padding:0 20px 0 20px;
 }
 
 .navbar ul {
@@ -12,4 +14,12 @@
 .navbar ul li {
     list-style: none;
     padding: 10px;
+}
+
+nav ul li a {
+    color:white;
+}
+
+h4 a {
+    color: white;
 }

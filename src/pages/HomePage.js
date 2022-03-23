@@ -34,13 +34,13 @@ const HomePage = () => {
 
         return (
             <main>
-            <section className = "shows-by-category">
-                <h2>Popular now</h2>
+            <section className="shows-by-category">
+                <h2 className="category-heading">Popular now</h2>
                 <PopularShows  popularShows={popularShows} onShowClick={onShowClick}/>
                 {selectedShow ? <Show selectedShow= {selectedShow}/>: null}
             </section>
             <section className = "shows-by-category">
-                <h2>Top Rated Shows</h2>
+                <h2 className="category-heading">Top Rated Shows</h2>
                 <TopRatedShows topRatedShows = {topRatedShows}/>
             
 

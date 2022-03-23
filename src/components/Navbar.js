@@ -7,7 +7,10 @@ const Navbar = () => {
             <h4><a href= "/"> BeSeries</a></h4>
             <ul>
                 <li><a href= "/">Home</a></li>
-                <li><a href = "/search">Search</a></li>
+                <li>
+                    <input type="search" placeholder='Find series'></input>
+                    <button type='submit'>GO</button>
+                </li>
             </ul>
         </nav>
     )

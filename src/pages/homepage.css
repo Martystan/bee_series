@@ -1,3 +1,41 @@
+body{
+    background-color: #424343;
+    color: white;
+}
+
+.shows-by-category{
+    padding: 0 60px 0 60px;
+    
+
+}
 .shows-by-category ul{
     display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 0;
+    
+    
+}
+
+ul::-webkit-scrollbar{
+    display: none;
+}
+.show-tile {
+    /* margin-right: 20px; */
+    list-style: none;
+    padding-right:20px;
+}
+
+.poster{
+    object-fit: contain;
+    width: 200px;
+    transition: transform 450ms;
+}
+
+.poster:hover{
+    transform: scale(1.08);
+}
+
+.category-heading {
+    padding-left: 0px;
 }

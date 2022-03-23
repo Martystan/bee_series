@@ -5,8 +5,8 @@ const PopularShows = ({popularShows, onShowClick}) => {
         const handleClick = () =>{
             onShowClick(popularShow)
         }
-        return <li key={index} onClick= {handleClick}>
-        <img src={imageURL + popularShow.poster_path} alt={popularShow.name}></img>
+        return <li className = "show-tile" key={index} onClick= {handleClick}>
+        <img  className = "poster" src={imageURL + popularShow.poster_path} alt={popularShow.name}></img>
         <p>{popularShow.name}</p>
         
         </li>
