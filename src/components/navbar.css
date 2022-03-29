@@ -4,11 +4,17 @@
     background-color: #feb611;
     color: white;
     padding:0 20px 0 20px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 2;
+    
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-between;
+    padding-right: 40px;
 }
 
 .navbar ul li {
@@ -18,8 +24,14 @@
 
 nav ul li a {
     color:white;
+    text-decoration: none;
 }
 
 h4 a {
     color: white;
+    text-decoration: none;
+}
+
+.search-input{
+    outline: none;
 }
