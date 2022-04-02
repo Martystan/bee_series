@@ -1,4 +1,4 @@
-
+import './search.css'
 
 const Search = ({searchTiles}) => {
     
