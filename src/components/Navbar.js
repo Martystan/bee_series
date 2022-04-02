@@ -1,14 +1,19 @@
 import './navbar.css'
 import {useState} from 'react'
+import Search from '../pages/Search'
 
 
+const imageURL = "https://image.tmdb.org/t/p/w200/"
 
 const Navbar = () => {
+
+    
     const [query, setQuery] = useState('')
     const [searchResults, setSearchResults] = useState([])
 
     const searchTiles = searchResults.map((result, index) =>{
         return <li key = {index}>
+        <img src = {imageURL + result.poster_path} alt = "poster"></img>
             <p>{result.name}</p>
         </li>
 })
@@ -26,7 +31,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className= "navbar">
+        <nav >
+            <div className= "navbar">
             <h4><a href= "/"> BeSeries</a></h4>
             
             <ul>
@@ -36,14 +42,19 @@ const Navbar = () => {
                         <input  className="search-input" type="search" placeholder='Find series'
                         value={query}
                         onChange={handleOnChange}></input>
+                        
                         <button
                         onClick = {handleOnClick}  
                         type='submit'><i className="material-icons">search</i></button>
+                        
                     </form>
                     
                 </li>
             </ul>
-            <div>{searchTiles}</div>
+            </div>
+            
+            <Search searchTiles = {searchTiles}/>
+            
             
             
         </nav>
