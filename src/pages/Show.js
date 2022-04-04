@@ -1,4 +1,5 @@
 const Show = ({selectedShow}) => {
+    
     return (
         <section>
             <p>Show overview: {selectedShow.overview}</p>

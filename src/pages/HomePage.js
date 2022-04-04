@@ -28,8 +28,13 @@ const HomePage = () => {
     useEffect(fetchPopularSeries,[])
     useEffect(fetchTopRatedSeries,[])
 
+    
+    
+
     const onShowClick = (show) => {
+        
         setSelectedShow(show)
+        
     }
 
         return (
