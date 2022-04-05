@@ -8,6 +8,7 @@
     top:0;
     width: 100%;
     z-index: 2;
+    align-items: center;
     
 }
 
@@ -45,4 +46,9 @@ h4 a {
     display: flex;
     align-items: center;
 
+}
+
+.links_searchbar{
+    display: flex;
+    align-items: center;
 }

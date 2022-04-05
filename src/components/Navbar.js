@@ -39,8 +39,8 @@ const Navbar = () => {
                 </div>
             
             
-            <ul>
-                <li><a href= "/">Home</a></li>
+            <ul className="links_searchbar">
+                <li><a href= "/">HOME</a></li>
                 <li>
                     <form>
                         <input  className="search-input" type="search" placeholder='Find series'
