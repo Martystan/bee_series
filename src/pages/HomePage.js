@@ -46,8 +46,8 @@ const HomePage = () => {
             </section>
             <section className = "shows-by-category">
                 <h2 className="category-heading">Netflix Shows</h2>
-                <NetflixShows netflixShows = {netflixShows}/>
-            
+                <NetflixShows netflixShows = {netflixShows} onShowClick={onShowClick}/>
+                {selectedShow ? <Show selectedShow= {selectedShow}/>: null}
 
             </section>
             </main>

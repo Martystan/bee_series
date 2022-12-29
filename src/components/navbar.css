@@ -1,14 +1,18 @@
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #feb611;
-    color: white;
+    color: #F7cb15;
     padding:0 20px 0 20px;
     position:fixed;
     top:0;
     width: 100%;
     z-index: 2;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+
     
 }
 
@@ -24,17 +28,36 @@
 }
 
 nav ul li a {
-    color:white;
+    
     text-decoration: none;
 }
 
 h4 a {
-    color: white;
+    color: #F7cb15;
+    font-size: 30px;
+    font-family: 'Rampart One';
     text-decoration: none;
+    
+}
+
+.search {
+    background-color: #F7cb15;
+    border-radius: 25px;
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .search-input{
     outline: none;
+    border-style: none;
+    border-radius: 25px;
+    background-color: #F7cb15;
+    padding: 10px;
+    width:200px;
+    height:40px;
+    
 }
 
 .search-poster{ padding-top: 100px;}
@@ -44,7 +67,8 @@ h4 a {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+
 
 }
 
@@ -52,3 +76,32 @@ h4 a {
     display: flex;
     align-items: center;
 }
+
+.menu-item  a{
+    text-decoration: none;
+    color: grey;
+}
+
+.menu-item {
+    margin-left: 10px;
+}
+
+
+  
+
+
+
+  .search-icon {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+ 
+ 
+  
+  
