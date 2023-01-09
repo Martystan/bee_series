@@ -1,0 +1,20 @@
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border: solid;
+    border-radius: 25px;
+    border-color: #F7cb15;
+    background-color: white;
+    color: grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.my-shows-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

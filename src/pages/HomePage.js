@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import './homepage.css'
+import Test from "./ToWatch";
 
 
 // components
@@ -50,6 +51,7 @@ const HomePage = () => {
                 {selectedShow ? <Show selectedShow= {selectedShow}/>: null}
 
             </section>
+            
             </main>
     )
 }

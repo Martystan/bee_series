@@ -1,7 +1,8 @@
-ul {
+.search-results {
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
+    margin-top: 150px;
     
 }
 
