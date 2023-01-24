@@ -1,16 +1,25 @@
 import './myShow.css'
+import { useState } from 'react'
 
-const MyShow = ({myShows}) => {
+const MyShow = ({myShows, changeRating}) => {
+
+    
+    
+
     const myShowTiles = myShows.map((myShow,index)=>{
-        return <li key={index} class="list-item">
+        const handleClick=()=>{
+            console.log(myShow.rating)
+        }
+
+        return <li key={index} className="list-item">
         <p>Title: {myShow.title}</p>
         <p>Rating: {myShow.rating}</p>
-        <button>We'll see</button>
+        <button onClick={handleClick}>Change rating</button>
         </li>
     })
     
     return (
-        <ul class="my-shows-wrapper">
+        <ul className="my-shows-wrapper">
             {myShowTiles}
             
 

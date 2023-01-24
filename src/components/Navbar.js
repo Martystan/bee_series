@@ -49,8 +49,8 @@ const Navbar = () => {
                     <img  className="bee" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8e5f473-0143-4402-ad03-6168c0064bd5/ddeyl4i-f1cf5cc8-39c1-4ff9-af27-24552db05200.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4ZTVmNDczLTAxNDMtNDQwMi1hZDAzLTYxNjhjMDA2NGJkNVwvZGRleWw0aS1mMWNmNWNjOC0zOWMxLTRmZjktYWYyNy0yNDU1MmRiMDUyMDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MDUcvX9EsLsu0pWiZhnGi4eN6BzuKnnkZbnmIlpK6og" alt= "bee"></img>
                     <h4><a href= "/"> BeeSERIES</a></h4>
                     
-                    <Link to="/"><span className="menu-item"><a href= "/">HOME</a></span></Link>
-                    <Link to="/to-watch"><span className="menu-item"><a href= "/">TO WATCH</a></span></Link>
+                    <Link to="/" className='link'><span className="menu-item">HOME</span></Link>
+                    <Link to="/to-watch" className='link'><span className="menu-item">TO WATCH</span></Link>
                 </div>
 
                 

@@ -1,5 +1,6 @@
 import MyShow from "../components/MyShow";
 
+
 const ToWatch = ()=>{
     const myShows = [
         {
@@ -20,6 +21,9 @@ const ToWatch = ()=>{
 
     ]
 
+    
+    
+
     return (
         <>
           
@@ -33,5 +37,6 @@ const ToWatch = ()=>{
         
       );
 }
+
 
 export default ToWatch;
